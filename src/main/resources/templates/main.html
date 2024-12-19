@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- You can pass parameters from your templates to your main template and insert them -->
     <title>{#insert title/}</title>
-    <style type="text/css">
-    .head {
-      border-bottom: 1px solid black;
-      margin-bottom: 1em;
-    }
-    .head div {
-      display: inline-block;
-      margin: 0.5em;
-    }
-    </style>
     {#insert moreStyles /}
     {#insert moreScripts /}
   </head>
-  <body>
-    <div class="head">
-      <!-- You can make links to actions using the uri: namespace -->
-      <div><a href="{uri:Todos.index}">Index</a></div>
-      <div><a href="{uri:Todos.todos}">Todos</a></div>
+  <body class="bg-gray-100">
+
+    <nav class="bg-blue-500 p-4 flex items-center justify-between">
+        <div class="text-white text-2xl">
+            👌
+        </div>
+
+        <div class="space-x-4">
+          <a href="{uri:Landing.index}" class="text-white hover:text-gray-200">Index</a>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container mx-auto mt-8">
+      {#insert /}
     </div>
-    <!-- This inserts the body of your templates -->
-    {#insert /}
+
   </body>
 </html>
