@@ -2,25 +2,15 @@
 <html>
   <head>
     <title>{#insert title/}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="static/favicon.png">
+    {#bundle /}
     {#insert moreStyles /}
     {#insert moreScripts /}
   </head>
-  <body class="bg-gray-100">
+  <body data-bs-theme="dark">
+    {#include _nav.html /}
 
-    <nav class="bg-blue-500 p-4 flex items-center justify-between">
-        <div class="text-white text-2xl">
-            👌
-        </div>
-
-        <div class="space-x-4">
-          <a href="{uri:Landing.index}" class="text-white hover:text-gray-200">Index</a>
-        </div>
-    </nav>
-
-    <!-- Body -->
-    <div class="container mx-auto mt-8">
-      {#insert /}
-    </div>
-
+    {#insert/}
   </body>
 </html>
