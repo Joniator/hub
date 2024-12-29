@@ -1,13 +1,10 @@
 package util;
 
-import java.util.Date;
-
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;
 
 import io.quarkus.runtime.LaunchMode;
 import io.quarkus.runtime.StartupEvent;
-import model.Todo;
 
 @ApplicationScoped
 public class Startup {
