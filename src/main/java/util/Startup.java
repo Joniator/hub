@@ -17,6 +17,7 @@ public class Startup {
     public void start(@Observes StartupEvent evt) {
         // in DEV mode we seed some data
         if(LaunchMode.current() == LaunchMode.DEVELOPMENT) {
+            /*
             Todo a = new Todo();
             a.task = "First item";
             a.persist();
@@ -25,6 +26,7 @@ public class Startup {
             b.task = "Second item";
             b.completed = new Date();
             b.persist();
+             */
         }
     }
 }
