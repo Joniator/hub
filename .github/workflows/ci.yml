@@ -63,6 +63,9 @@ jobs:
           name: native-executable
           path: target
 
+      - name: ls
+        run: ls
+
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v6
