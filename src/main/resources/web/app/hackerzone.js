@@ -28,6 +28,7 @@ function getScore() {
 
 /** @param {Score} score */
 function saveScore(score) {
+    score.highscore = Math.max(score.highscore, score.points);
     Cookies.set(cookieName, JSON.stringify(score));
 }
 
@@ -63,7 +64,7 @@ export class Hackerzone {
         }
         setTimeout(() => {
             saveScore(score)
-            alert("Dein neuer score ist " + score.points)
+            alert("Dein Score: " + score.points + ", Highscore: " + score.highscore)
             image.style.zIndex = oldConfig.style.zIndex  ;
             image.style.position = oldConfig.style.position ;
             image.style.width = oldConfig.style.width;
