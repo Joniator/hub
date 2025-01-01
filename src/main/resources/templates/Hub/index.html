@@ -1,53 +1,71 @@
 {#include main.html}
 
-    {#title}Welcome{/title}
+{#title}Welcome{/title}
 
-    <div class="jumbo text-center">
-        <h1>
-            >TazeD<-Hub
-        </h1>
-        <p>
-            This is a christian server! 🙏 So please:
-        </p>
-        <h3 class="triggered">
-            NO THOTS!
-        </h3>
-        <div class="container">
-            <form action="https://www.google.com/search" method="get">
-                <div class="input-group">
-                    <input type="text" class="form-control" name="q" placeholder="Google dich glücklich...">
-                    <button type="submit" class="btn btn-success">Search</button>
+<div class="jumbo text-center">
+    <h1>
+        >TazeD<-Hub
+    </h1>
+    <p>
+        This is a christian server! 🙏 So please:
+    </p>
+    <h3 class="triggered">
+        NO THOTS!
+    </h3>
+    <div class="container">
+        <form action="https://www.google.com/search" method="get">
+            <div class="input-group">
+                <input type="text" class="form-control" name="q" autofocus placeholder="Google dich glücklich...">
+                <button type="submit" class="btn btn-success">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="landing-apps-container">
+    <div class="card" style="width: 14rem;">
+        <img src="/static/images/ts3.png" class="card-img-top p-4" alt="TeamSpeak Logo">
+        <div class="card-body">
+            <h5 class="card-title">Teamspeak</h5>
+            <p class="card-text">Perfekt zum flamen</p>
+            <a href="ts3server://tazed.club" class="btn btn-primary">Mitreden</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 14rem;">
+        <img src="/static/images/yt.png" class="card-img-top p-4" alt="YouTube Logo">
+        <div class="card-body">
+            <h5 class="card-title">YouTube</h5>
+            <p class="card-text">DuRöhre</p>
+            <a href="https://youtube.com" class="btn btn-primary">Guck</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 26rem;">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="/static/images/ddos.jpeg" id="hackerzone-card" style="height:auto;" class="card-img-top" alt="snap ddos">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">Hackerzone</h5>
+                    <div class="card-text">
+                        <p>He will attack.</p>
+                    </div>
+                    <div class="input-group">
+                        <button onclick="hackerzone.start()" class="btn btn-primary">Defend yourself</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-blind" data-bs-toggle="dropdown"
+                                aria-expanded="false"></button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a onclick="hackerzone.reset()" class="dropdown-item">Reset</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
-            </form>
-        </div>
-    </div>
-
-    <div class="landing-apps-container">
-        <div class="card" style="width: 18rem;">
-            <img src="/static/images/ts3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Teamspeak</h5>
-                <p class="card-text">Perfekt zum flamen</p>
-                <a href="ts3server://tazed.club" class="btn btn-primary">Mitreden</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="/static/images/yt.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">YouTube</h5>
-                <p class="card-text">DuRöhre</p>
-                <a href="https://youtube.com" class="btn btn-primary">Guck</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="/static/images/ddos.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Hackerzone</h5>
-                <p class="card-text">He will attack</p>
-                <a onclick="enterHackerzone()" class="btn btn-primary">Defend yourself</a>
             </div>
         </div>
     </div>
+</div>
 {/include}

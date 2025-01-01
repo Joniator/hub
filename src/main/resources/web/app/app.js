@@ -1,5 +1,5 @@
 import "bootstrap";
+import "./hackerzone"
+import {Hackerzone} from "./hackerzone";
 
-window.enterHackerzone =  function() {
-    alert("This is under construction. You are not prepared.")
-}
+document.hackerzone = new Hackerzone();
