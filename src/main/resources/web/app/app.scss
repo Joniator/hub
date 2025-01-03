@@ -13,10 +13,11 @@
   flex-flow: row wrap;
 
   /* Then we define how is distributed the remaining space */
-  justify-content: flex-start;
+  justify-content: center;
 
   .card {
     margin: 1rem;
+    box-shadow: 0px 1px 1rem black;
   }
 }
 
